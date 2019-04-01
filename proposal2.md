@@ -12,3 +12,7 @@ The number of hours the average American works per week is a hotly debated topic
 
 3. How have the hours worked at different ages changed over the decades?
 
+I am using a slice of the GSS dataset with 19 chosen variables.
+
+The ethical concern this project might raise is creating peer pressure focing people to work longer then they already are. This culture is visible in Japan
+
