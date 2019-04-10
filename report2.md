@@ -146,3 +146,11 @@ Here is a sample result where we plotted the confidence in the federal governmen
 The regression model shows the same trends we have hypothesized with the confidence in the federal government falling with real income. Swapping out the explanatory variable allows to visualize the other effects.
 
 The reason for picking age and year as opposed to any other combination of the 3 of age, cohort and year is because of the reasons visible in the following graphs. 1. There is a very significant age effect. The year effect, even though its very noisy, is looks to be a lot more explanatory than the cohort variable.
+
+If we change the values of the other variables from their average to something that we believe leads to a higher confidence in the government, this is what we see.
+
+![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/high.png)
+
+
+With confidence in the press set to high, party set to democrats, confidence in the press high and age 23, we see that the confidence in the government at all income levels is over 10% higher.
+
