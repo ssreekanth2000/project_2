@@ -6,7 +6,7 @@ Data science | Spring 2019
 
 #### Confidence in the Federal government by age and year surveyed
 
-Looking at the news on TV and going through social media, one gets the feeling that fewer and fewer people have high levels of confidence in the branches of government. In this article we shall examine how the trust levels in the various branches of the government and the press have changed over the years among various age groups. The GSS dataset has collected this data right from 1972. In the second part of the article we shall be looking at possible correlations and factors which may explain the changes in trust levels. We have examined age and year instead of any other combination of age,cohort and year because there are very significant effects caused by age and year. 
+Looking at the news on TV and going through social media, one gets the feeling that fewer and fewer people have high levels of confidence in the branches of government. In this article we shall examine how the trust levels in the various branches of the government and the press have changed over the years among various age groups. The GSS dataset has collected this data right from 1972. In the second part of the article we shall be looking at possible correlations and factors which may explain the changes in trust levels. We have examined age and year instead of any other combination of age,cohort and year because there are very large effects caused by age and year. 
 
 **Faith in the executive branch  of the government**
 
@@ -115,7 +115,7 @@ Looking at these correlations the increased trust in the government, particularl
 Now I am going to build a regression model to predict confidence in the government.
 
 On the basis of the correlations and graphs we have seen above the following factors seems logical,
-* Age:- We can see a very significant age effect in the graph where we have grouped by cohort. We are also including the quadratic term for age as there is also a non-linear relationship.
+* Age:- We can see a pretty big age effect in the graph where we have grouped by cohort. We are also including the quadratic term for age as there is also a non-linear relationship.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/exe_cohort.png)
 
@@ -123,7 +123,7 @@ On the basis of the correlations and graphs we have seen above the following fac
 
 * Confidence in the press:- Looking at the correlations, this is the strongest. A higher confidence in the press directly leads to a higher confidence in the government.
 
-* Partyid:- This was a very significant variable, with confidence changing dramatically on the basis of which party was in power.
+* Partyid:- This was a variable with a big influence, with confidence changing dramatically on the basis of which party was in power.
 
 That is the model I made.
 
@@ -145,7 +145,7 @@ Here is a sample result where we plotted the confidence in the federal governmen
 
 The regression model shows the same trends we have hypothesized with the confidence in the federal government falling with real income. Swapping out the explanatory variable allows to visualize the other effects.
 
-The reason for picking age and year as opposed to any other combination of the 3 of age, cohort and year is because of the reasons visible in the following graphs. 1. There is a very significant age effect. The year effect, even though its very noisy, is looks to be a lot more explanatory than the cohort variable.
+The reason for picking age and year as opposed to any other combination of the 3 of age, cohort and year is because of the reasons visible in the following graphs. 1. There is a very visible age effect. The year effect, even though its very noisy, looks to be a lot more explanatory than the cohort variable.
 
 If we change the values of the other variables from their average to something that we believe leads to a higher confidence in the government, this is what we see.
 
