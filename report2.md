@@ -102,7 +102,47 @@ We see a similarly strong correlation between the confidence in the press and th
 
 Interesting observarion that increasing confidence in the federal government is correlated with lower incomes
 .
-Looking at these correlations, the increased trust in the government, particularly among youg people can be attributed to 3 major factors. Falling real income for their age group, highest ever confidence in the government among democrats due to 8 years of a democratic president and increasing confidence in the press(particularly sharply from 2010 onwards). Now I am going to build a regression model to predict confidence in the government on the basis of the above factors.
+Looking at these correlations the increased trust in the government, particularly among youg people can be attributed to 3 major factors.
+
+1.Falling real income for their age group:- If we look at the inflation adjusted income across years for various age demographics, young people are the only demographic which saw its income go down in the last couple of decades. Looking at the correlation between income and confidence in the government, we can see that lower incomes correspond with higher confidence in the government.
+
+
+2.Highest ever confidence in the government among democrats:- 8 years of a democratic president until 2016, lead to the peak of democrats' confidence in the government. Since young people are mainly democrats, this also explains their high level of confidence in the government.
+
+3.Increasing confidence in the press:- The confidence among the press among young people has grown sharply from 2010 onwards, this can be prescibed to much more channels of media due to the penetration of media. High confidence in the press has a very heavy correlation with a higher confidence in the government.
+
+
+Now I am going to build a regression model to predict confidence in the government.
+
+On the basis of the correlations and graphs we have seen above the following factors seems logical,
+* Age:- We can see a very significant age effect in the graph where we have grouped by cohort. We are also including the quadratic term for age as there is also a non-linear relationship.
+
+![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/exe_cohort.png)
+
+* Income:- This is a varible where we have seen almost age groups react the same too, lower incomes lead to higher levels of confidence in the the government.
+
+* Confidence in the press:- Looking at the correlations, this is the strongest. A higher confidence in the press directly leads to a higher confidence in the government.
+
+* Partyid:- This was a veru significant variable, with confidence changing dramatically on the basis of which party was in power.
+
+That is the model I made.
+
+`model = smf.ols('confed ~ age + age2 + realinc + conpress +partyid', data=gss)`
+
+The results of the regression
+
+![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/regression.png)
+
+
+We see on the basis of coefficients of regression and range of values, the variables CONPRESS, PARTYID, REALINC have the biggest effects and the others following them.
+
+
+Here is a sample result where we plotted the confidence in the federal government varying with inflation adjusted income with all the varibles set to their unweighted mean. 
 
 
 
+![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/reg_inc.png)
+
+The regression model shows the same trends we have hypothesized with the confidence in the federal government falling with real income. Swapping out the explanatory variable allows to visualize the other effects.
+
+The reason for picking age and year as opposed to any other combination of the 3 of age, cohort and year is because of the reasons visible in the following graphs. 1. There is a very significant age effect. The year effect, even though its very noisy, is looks to be a lot more explanatory than the cohort variable.
