@@ -152,6 +152,9 @@ If we change the values of the other variables from their average to something t
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/high.png)
 
 
+
 With confidence in the press set to high, party set to democrats, confidence in the press high and age 23, we see that the confidence in the government at all income levels is over 10% higher.
 
-One last thing I wanted to explore was the effect of the gender of the respondent on this model. Below are the models plotted against income with the first being for men and the second being 
+One last thing I wanted to explore was the effect of the gender of the respondent on this model. Below are the models plotted against income with the first being for men and the second being women
+
+![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/sex.png)
