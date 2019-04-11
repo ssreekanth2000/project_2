@@ -18,7 +18,7 @@ The data was recorded the following way, a 1 indicated no confidence in the exec
 
 What we see in the graph is that until the mid 2000s, all age groups' confidence in the executive branch was almost the same. The divergence might have started off as computer use(Graphed below) and internet penetration allowed more forms of media and opinions. It could also be due to increased polarization. This could have led to people forming their opinions differently on the basis of what they are most exposed to. Other observations include the dips in confidences at various points which can be attributed to the watergate scandal and the 9/11 attacks. Confidence in the federal government is almost at its highest ever levels now. 
 
-**Confidence in the Judicial branch of the govenment**
+**Confidence in the Judicial branch of the government**
 
 Now lets look at confidence levels in the Judicial branch of the government. This would be interesting to explore as we can observe how it changes along with the confidence in the executive branch of the government. Again this is plotted in the same way, looking at confidence levels at various ages across years.
 
@@ -30,7 +30,7 @@ We can see that the spread in the confidence on the judicial branch is smaller c
 
 **Confidence in the legislative branch**
 
-We shall round off this visulization of the confidence in the government with the legislative branch.
+We shall round off this visualization of the confidence in the government with the legislative branch.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/age_legis.png)
 
@@ -40,7 +40,7 @@ This graph to me is very intriguing because from what I have heard as a foreign 
 
 Now we shall explore factors like the confidence in the army, confidence in the press and how people's incomes have changed. This is to explore if these factors explain the previous trends we have explored. 
 
-We shall first breifly visualize these factors in the same way as we did previously, then visualize realationships and then try to perform regression analysis. 
+We shall first briefly visualize these factors in the same way as we did previously, then visualize relationships and then try to perform regression analysis. 
 
 **Confidence in the press**
 
@@ -55,9 +55,9 @@ The confidence in the press has risen steadily till the 1992 and it grew really 
 
 Confidence in the army is the first thing where we have seen a constantly decreasing trend. It could be attributed to the fact growing military spending has been frowned upon and the spread of that information through the internet could be the cause. This is also confusing as it could be seen either as confidence in the military's ability to protect the nation or confidence in how well they are run. As there is this ambiguity, we shall not be using this in the regression analysis.
 
-**Confidence in the government across time by party affliation**
+**Confidence in the government across time by party affiliation**
 
-Another factor I felt would be key for us to examine in order to understand the factors between the confidence levels in the government is how the confidence varied by party affliation. 
+Another factor I felt would be key for us to examine in order to understand the factors between the confidence levels in the government is how the confidence varied by party affiliation. 
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/party_exe.png)
 
@@ -156,10 +156,10 @@ Looking at the scatter plot between education level and the confidence levels in
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/education.png)
 
 
-Replotting our model with the education level on the x axis, we see the behvaiour observed in the visualizations very much present in the model.
+Replotting our model with the education level on the x axis, we see the behaviour observed in the visualizations very much present in the model.
 
 
-Now lets try to change the variables in the model to check if our model confirms what we have seen in the previous visulaizations. We shall plot the confidence in the federal government along with education levels for a young self-identified democrat and an older self-identified republican with varying levels of trust in the press.
+Now lets try to change the variables in the model to check if our model confirms what we have seen in the previous visualizations. We shall plot the confidence in the federal government along with education levels for a young self-identified democrat and an older self-identified republican with varying levels of trust in the press.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/old_young.png1.png)
 
@@ -173,4 +173,3 @@ One last thing I wanted to explore was the effect of the gender of the responden
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/sex.png)
 
 We see a non-trivial difference in confidence, with women having higher levels than men. This might be due to the fact that women are more likely to be democrats. We also see that both of them follow the same trend when it comes to income.
-
