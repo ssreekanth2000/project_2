@@ -6,17 +6,17 @@ Data science | Spring 2019
 
 #### Confidence in the Federal government by age and year surveyed
 
-Looking at the news on TV and going through social media, one gets the feeling that fewer and fewer people have high levels of confidence in the branches of government. In this article I shall examine how the trust levels in the various branches of the government and the press have changed over the years among various age groups. The GSS dataset has collected this data right from 1972. In the second part of the article we shall be looking at possible relationships and factors which may explain the changes in trust levels. We have examined age and year instead of any other combination of age,cohort and year because there are very large effects caused by age and year. 
+Looking at the news on TV and going through social media, one gets the feeling that fewer and fewer people have high levels of confidence in the branches of government. In this article I shall examine how the trust levels in the various branches of the government and the press have changed over the years among various age groups. The GSS dataset has collected this data right from 1972. In the second part of the article we shall be looking at possible relationships and factors which may explain the changes in trust levels. We have examined age and year instead of any other combination of age,cohort and year because there are very large effects caused by age and year. This is visible in a visualization that follows.
 
 **Confidence in the executive branch of the government**
 
-In this first figure we shall see the trends in how the confidence in the executive branch of the federal government has changed over the years in people of different ages. This will allow us to see any difference between people of different ages.
+In this first figure we shall see the trends in how the confidence in the executive branch of the federal government has changed over the years in people of different ages. This will allow us to see any difference in the levels of confidence between people of different ages.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/age_exe.png)
 
 The data was recorded the following way, a 1 indicated no confidence in the executive branch, a 2 indicates reasonable amounts of confidence and a 3 indicates a very high level of confidence. 
 
-What we see in the graph is that until the mid 2000s, all age groups' confidence in the executive branch was almost the same. The divergence might have started off as computer use(Graphed below) and internet penetration allowed more forms of media and opinions. It could also be due to increased polarization. This could have led to people forming their opinions differently on the basis of what they are most exposed to. Other observations include the dips in confidences at various points which can be attributed to the watergate scandal and the 9/11 attacks. Confidence in the federal government is almost at its highest ever levels now. 
+What we see in the graph is that until the mid 2000s, all age groups' confidence in the executive branch was almost the same. The divergence might have started off as computer use and internet penetration allowed more forms of media and opinions. It could also be due to increased polarization. This could have led to people forming their opinions differently on the basis of what they are most exposed to. Other observations include the dips in confidences at various points which can be attributed to the watergate scandal and the 9/11 attacks. Confidence in the federal government is almost at its highest ever levels now. 
 
 **Confidence in the Judicial branch of the govenment**
 
@@ -25,7 +25,7 @@ Now lets look at confidence levels in the Judicial branch of the government. Thi
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/age_jud.png)
 
 
-We can see that the spread in the confidence on the judicial branch is smaller compared to the executive branch. We also see greater divergence between age groups which might be due to the face the young people might have lesser experience with the judiciary. Once again the confidence in the branch is around its all time peak. 
+We can see that the spread in the confidence on the judicial branch is smaller compared to the executive branch. We also see greater divergence between age groups which might be due to the fact that the young people might have lesser experience with the judiciary. Once again the confidence in the branch is around its all time peak. 
 
 
 **Confidence in the legislative branch**
@@ -38,7 +38,7 @@ We shall round off this visulization of the confidence in the government with th
 This graph to me is very intriguing because from what I have heard as a foreign citizen, I was under the belief that people were losing their confidence in the house and senate's ability to take action and stay non-corrupt from the influence of lobbying. This graph proves otherwise with confidence hitting an all time peak among all ages. We once again see the trend of divergence beginning only recently. The size of the variation indicated by the error bars has also grown.
 
 
-Now we shall explore factors like the confidence in the army, confidence in the press and how people's incomes have changed. This is to explore if these factors explain the previous trends we have explored. 
+Now we shall explore factors like the confidence in the army, confidence in the press and how people's incomes have changed. This is to explore if these factors explain the previous trends we have visualized. 
 
 We shall first breifly visualize these factors in the same way as we did previously, then visualize realationships and then try to perform regression analysis. 
 
@@ -47,7 +47,7 @@ We shall first breifly visualize these factors in the same way as we did previou
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/age_press.png)
 
 
-The confidence in the press has risen steadily till the 1992 and it grew really fast till 1995. It has since grown slower since. The trust in the press by younger people has risen sharply since around 2011, indicating the impact of the internet. As we go on to the later analysis, we can see that it is a very large factor in the high confidence in the government among young people.
+The confidence in the press has risen steadily till 1992 and it grew really fast till 1995. It has since grown slower. The trust in the press by younger people has risen sharply since around 2011, indicating the impact of the internet. As we go on to the later analysis, we can see that it is a very large factor in the high confidence in the government among young people.
 
 **Confidence in the army**
 
@@ -61,7 +61,7 @@ Another factor I felt would be key for us to examine in order to understand the 
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/party_exe.png)
 
-Visualizing  the confidence in the federal government by  party identity shows what we would expect, each party trusts the government more when they are in power. the Democrats seem to vary in a higher range and hit a peak in 2016 following 8 years in power.
+Visualizing  the confidence in the federal government by  party identity shows what we would expect, each party trusts the government more when they are in power. The Democrats seem to vary in a higher range and hit a peak in 2016 following 8 years in power.
 
 
 **Income for various ages across time**
@@ -71,7 +71,7 @@ Income levels are a large influence behind the confidence in the government. Plo
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/inc_exe.png)
 
 
-Plotting the real income at different ages over the years could help us figure out why the confidence levels in the government change. Incomes for young people and the old people have changed a lot. This could help explain why young people's trust in the the government is the highest, because lower income people tend to trust the government more as shown in a correlation below.
+Plotting the real income at different ages over the years could help us figure out why the confidence levels in the government change. Incomes for young people and the old people have changed a lot. This could help explain why young people's trust in the the government is the highest, because people with lower income tend to trust the government more as shown in a correlation below.
 
 
 #### Relationships to help make models for predictions
@@ -109,12 +109,13 @@ Looking at these relationships the increased trust in the government, particular
 
 2.Highest ever confidence in the government among democrats:- 8 years of a democratic president until 2016, lead to the peak of democrats' confidence in the government. Since young people are mainly democrats, this also explains their high level of confidence in the government.
 
-3.Increasing confidence in the press:- The confidence among the press among young people has grown sharply from 2010 onwards, this can be prescribed to much more channels of media due to the penetration of media. High confidence in the press has a very heavy correspondence with a higher confidence in the government.
+
+3.Increasing confidence in the press:- The confidence among the press among young people has grown sharply from 2010 onwards, this can be prescribed to much more channels of media due to the penetration of internet. High confidence in the press has a very heavy correspondence with a higher confidence in the government.
 
 
-Now I am going to build a regression model to predict confidence in the government.
+Now I am going to build a regression model to predict confidence in the government. This shall also help us verify our speculations.
 
-On the basis of the correlations and graphs we have seen above the following factors seem logical to use,
+On the basis of the relationships and graphs we have seen above the following factors seem logical to use,
 * Age:- We can see a large age effect in the graph where we have grouped by cohort. We are also including the quadratic term for age as there is also a non-linear relationship.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/exe_cohort.png)
@@ -134,7 +135,7 @@ The results of the regression
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/regression.png)
 
 
-We see on the basis of coefficients of regression and range of values, the variables CONPRESS, PARTYID, REALINC have the biggest effects and the others following them.
+We see on the basis of coefficients of regression and range of values, the variables confidence in the press, party affliation and income have the biggest effects and the others following them.
 
 
 Here is a sample result where we plotted the confidence in the federal government varying with inflation adjusted income with all the variables set to their unweighted mean. 
@@ -145,7 +146,7 @@ Here is a sample result where we plotted the confidence in the federal governmen
 
 The regression model shows the same trends we have hypothesized with the confidence in the federal government falling with real income. Swapping out the explanatory variable allows to visualize the other effects.
 
-Now that I have a model which fits the correlations we have observed, lets try to expand it. 
+Now that I have a model which fits the relationships we have observed, lets try to expand it. 
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/educ_fed.png)
 
