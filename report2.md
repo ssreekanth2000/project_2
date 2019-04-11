@@ -6,9 +6,9 @@ Data science | Spring 2019
 
 #### Confidence in the Federal government by age and year surveyed
 
-Looking at the news on TV and going through social media, one gets the feeling that fewer and fewer people have high levels of confidence in the branches of government. In this article I shall examine how the trust levels in the various branches of the government and the press have changed over the years among various age groups. The GSS dataset has collected this data right from 1972. In the second part of the article we shall be looking at possible correlations and factors which may explain the changes in trust levels. We have examined age and year instead of any other combination of age,cohort and year because there are very large effects caused by age and year. 
+Looking at the news on TV and going through social media, one gets the feeling that fewer and fewer people have high levels of confidence in the branches of government. In this article I shall examine how the trust levels in the various branches of the government and the press have changed over the years among various age groups. The GSS dataset has collected this data right from 1972. In the second part of the article we shall be looking at possible relationships and factors which may explain the changes in trust levels. We have examined age and year instead of any other combination of age,cohort and year because there are very large effects caused by age and year. 
 
-**Faith in the executive branch  of the government**
+**Confidence in the executive branch of the government**
 
 In this first figure we shall see the trends in how the confidence in the executive branch of the federal government has changed over the years in people of different ages. This will allow us to see any difference between people of different ages.
 
@@ -40,7 +40,7 @@ This graph to me is very intriguing because from what I have heard as a foreign 
 
 Now we shall explore factors like the confidence in the army, confidence in the press and how people's incomes have changed. This is to explore if these factors explain the previous trends we have explored. 
 
-We shall first breifly visualize these factors in the same way as we did previously, then visualize correlations and then try to perform regression analysis. 
+We shall first breifly visualize these factors in the same way as we did previously, then visualize realationships and then try to perform regression analysis. 
 
 **Confidence in the press**
 
@@ -74,42 +74,42 @@ Income levels are a large influence behind the confidence in the government. Plo
 Plotting the real income at different ages over the years could help us figure out why the confidence levels in the government change. Incomes for young people and the old people have changed a lot. This could help explain why young people's trust in the the government is the highest, because lower income people tend to trust the government more as shown in a correlation below.
 
 
-#### Correlations to help make models for predictions
+#### Relationships to help make models for predictions
 
-Lets look how the dependent variables correlate with the explanatory variables in order to build regression models for predicting the trust in the government. We shall use the executive branch for this analysis as repeating the same analysis for all 3 branches would be very mechanical and a correlation exists between all 3 branches.
+Lets look how the dependent variables correlate with the explanatory variables in order to build regression models for predicting the trust in the government. We shall use the executive branch for this analysis as repeating the same analysis for all 3 branches would be very mechanical and a relationship exists between all 3 branches.
 
-**Correlation between confidence levels in the army and executive branch**
+**Relationship between confidence levels in the army and executive branch**
 
 
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/arm_exe.png)
 
-Here we see a very positive correlation wherein people who rate their confidence in the army higher on the (1-3) scale tend to have higher levels of trust in the government.
+Here we see a very positive relation wherein people who rate their confidence in the army higher on the (1-3) scale tend to have higher levels of trust in the government.
 
 
-**Correlation between confidence levels in the press and executive branch**
+**Relationship between confidence levels in the press and executive branch**
 
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/press_exe.png)
 
 
-We see a similarly strong correlation between the confidence in the press and the confidence in the government which makes sense considering people would think a more free press indicates a less oppressive regime.
+We see a similarly strong relationship between the confidence in the press and the confidence in the government which makes sense considering people would think a more free press indicates a less oppressive regime.
 
 
-**Correlation between levels in the income and confidence in the executive branch**
+**Relationship between levels in the income and confidence in the executive branch**
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/inc_exe1.png)
 
 Interesting observation that increasing confidence in the federal government is correlated with lower incomes.
 
-Looking at these correlations the increased trust in the government, particularly among young people can be attributed to 3 major factors.
+Looking at these relationships the increased trust in the government, particularly among young people can be attributed to 3 major factors.
 
-1.Falling real income for their age group:- If we look at the inflation adjusted income across years for various age demographics, young people are the only demographic which saw its income go down in the last couple of decades. Looking at the correlation between income and confidence in the government, we can see that lower incomes correspond with higher confidence in the government.
+1.Falling real income for their age group:- If we look at the inflation adjusted income across years for various age demographics, young people are the only demographic which saw its income go down in the last couple of decades. Looking at the relationship between income and confidence in the government, we can see that lower incomes correspond with higher confidence in the government.
 
 
 2.Highest ever confidence in the government among democrats:- 8 years of a democratic president until 2016, lead to the peak of democrats' confidence in the government. Since young people are mainly democrats, this also explains their high level of confidence in the government.
 
-3.Increasing confidence in the press:- The confidence among the press among young people has grown sharply from 2010 onwards, this can be prescribed to much more channels of media due to the penetration of media. High confidence in the press has a very heavy correlation with a higher confidence in the government.
+3.Increasing confidence in the press:- The confidence among the press among young people has grown sharply from 2010 onwards, this can be prescribed to much more channels of media due to the penetration of media. High confidence in the press has a very heavy correspondence with a higher confidence in the government.
 
 
 Now I am going to build a regression model to predict confidence in the government.
@@ -121,9 +121,9 @@ On the basis of the correlations and graphs we have seen above the following fac
 
 * Income:- This is a variable where we have seen almost age groups react the same too, lower incomes lead to higher levels of confidence in the the government.
 
-* Confidence in the press:- Looking at the correlations, this is the strongest. A higher confidence in the press directly leads to a higher confidence in the government.
+* Confidence in the press:- Looking at the relationships, this looks to be the strongest factor. A higher confidence in the press directly leads to a higher confidence in the government.
 
-* Partyid:- This was a variable with a big influence, with confidence changing dramatically on the basis of which party was in power.
+* Partyid:- This is a variable with a big influence, with confidence changing dramatically on the basis of which party was in power.
 
 This is the model I made.
 
@@ -156,7 +156,7 @@ Looking at the scatter plot between education level and the confidence levels in
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/education.png)
 
 
-Replotting our model with the education level on the x axis, we see the behvaiour observed in the correlation very much present in the model.
+Replotting our model with the education level on the x axis, we see the behvaiour observed in the visualizations very much present in the model.
 
 
 Now lets try to change the variables in the model to check if our model confirms what we have seen in the previous visulaizations. We shall plot the confidence in the federal government along with education levels for a young self-identified democrat and an older self-identified republican with varying levels of trust in the press.
