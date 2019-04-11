@@ -145,14 +145,30 @@ Here is a sample result where we plotted the confidence in the federal governmen
 
 The regression model shows the same trends we have hypothesized with the confidence in the federal government falling with real income. Swapping out the explanatory variable allows to visualize the other effects.
 
+Now that I have a model which fits the correlations we have observed, lets try to expand it. 
 
-If we change the values of the other variables from their average to something that we believe leads to a higher confidence in the government, this is what we see.
+![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/educ_fed.png)
+
+
+Looking at the scatter plot between education level and the confidence levels in the federal government, we see a non linear relationship where the confidence rises until a certain point and then falls.
+
+
+![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/education.png)
+
+
+Replotting our model with the education level on the x axis, we see the behvaiour observed in the correlation very much present in the model.
+
+
+
+
+Now lets try to change the variables in the model to check if our model confirms what we have seen in the previous visulaizations. We shall plot the confidence in the federal government along with income for a young self-identified democrat and an older self-identified republican with varying levels of trust in the press.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/old_young.png.png)
 
 
 
 With confidence in the press set to high, party set to democrats and age 23, we see that the confidence in the government at all income levels is over 20% higher compared to what is predicted for a republican aged 70 and with a low confidence in the press.
+
 
 One last thing I wanted to explore was the effect of the gender of the respondent on this model. Below are the models plotted against income with the first being for men and the second being women.
 
