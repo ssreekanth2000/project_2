@@ -71,12 +71,12 @@ Income levels are a large influence behind the confidence in the government. Plo
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/inc_exe.png)
 
 
-Plotting the real income at different ages over the years could help us figure out why the confidence levels in the government change. Incomes for young people and the old people have changed a lot. This could help explain why young people's trust in the the government is the highest, because lower income people tend to trust the government more as shown in a correlation below.
+Plotting the real income at different ages over the years could help us figure out why the confidence levels in the government change. Incomes for young people and the old people have changed a lot. This could help explain why young people's trust in the the government is the highest, because lower income people tend to trust the government more as shown in a visualization below.
 
 
 #### Relationships to help make models for predictions
 
-Lets look how the dependent variables correlate with the explanatory variables in order to build regression models for predicting the trust in the government. We shall use the executive branch for this analysis as repeating the same analysis for all 3 branches would be very mechanical and a relationship exists between all 3 branches.
+Lets look how the dependent variables relate with the explanatory variables in order to build regression models for predicting the trust in the government. We shall use the executive branch for this analysis as repeating the same analysis for all 3 branches would be very mechanical and a relationship exists between all 3 branches.
 
 **Relationship between confidence levels in the army and executive branch**
 
@@ -100,7 +100,7 @@ We see a similarly strong relationship between the confidence in the press and t
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/inc_exe1.png)
 
-Interesting observation that increasing confidence in the federal government is correlated with lower incomes.
+Interesting observation that increasing confidence in the federal government is related to lower incomes.
 
 Looking at these relationships the increased trust in the government, particularly among young people can be attributed to 3 major factors.
 
@@ -114,7 +114,7 @@ Looking at these relationships the increased trust in the government, particular
 
 Now I am going to build a regression model to predict confidence in the government.
 
-On the basis of the correlations and graphs we have seen above the following factors seem logical to use,
+On the basis of the relationships and graphs we have seen above the following factors seem logical to use,
 * Age:- We can see a large age effect in the graph where we have grouped by cohort. We are also including the quadratic term for age as there is also a non-linear relationship.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/exe_cohort.png)
@@ -145,7 +145,7 @@ Here is a sample result where we plotted the confidence in the federal governmen
 
 The regression model shows the same trends we have hypothesized with the confidence in the federal government falling with real income. Swapping out the explanatory variable allows to visualize the other effects.
 
-Now that I have a model which fits the correlations we have observed, lets try to expand it. 
+Now that I have a model which fits the relationships we have observed, lets try to expand it. 
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/educ_fed.png)
 
