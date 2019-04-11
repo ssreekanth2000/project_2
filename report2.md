@@ -35,7 +35,7 @@ We shall round off this visulization of the confidence in the government with th
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/age_legis.png)
 
 
-This graph to me is very interesting because from what I have heard as a foreign citizen, I was under the belief that people were losing their confidence in the house and senate's ability to take action and stay non-corrupt from the influence of lobbying. This graph proves otherwise with confidence hitting an all time peak among all ages. We once again see the trend of divergence beginning only recently. The size of the variation indicated by the error bars has also grown.
+This graph to me is very intriguing because from what I have heard as a foreign citizen, I was under the belief that people were losing their confidence in the house and senate's ability to take action and stay non-corrupt from the influence of lobbying. This graph proves otherwise with confidence hitting an all time peak among all ages. We once again see the trend of divergence beginning only recently. The size of the variation indicated by the error bars has also grown.
 
 
 Now we shall explore factors like the confidence in the army, confidence in the press and how stable people belive they are financially. This is to explore if these factors explain the previous trends we have explored. 
@@ -115,7 +115,7 @@ Looking at these correlations the increased trust in the government, particularl
 Now I am going to build a regression model to predict confidence in the government.
 
 On the basis of the correlations and graphs we have seen above the following factors seems logical,
-* Age:- We can see a pretty big age effect in the graph where we have grouped by cohort. We are also including the quadratic term for age as there is also a non-linear relationship.
+* Age:- We can see a large age effect in the graph where we have grouped by cohort. We are also including the quadratic term for age as there is also a non-linear relationship.
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/exe_cohort.png)
 
@@ -159,5 +159,5 @@ One last thing I wanted to explore was the effect of the gender of the responden
 
 ![alt text](https://github.com/ssreekanth2000/project_2/blob/master/photos/sex.png)
 
-We see a pretty large differnce in confidence, with women having higher levels than men. We also see that both of them follow the same trend when it comes to income.
+We see a non-trivial differnce in confidence, with women having higher levels than men. We also see that both of them follow the same trend when it comes to income.
 
